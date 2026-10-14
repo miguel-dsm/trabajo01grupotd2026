@@ -58,3 +58,44 @@ Teniendo en cuenta la cuantía de la beca asignada a cada país y el coste de vi
 4.  Bajo el criterio de Savage, Múnich es la alternativa que minimiza el arrepentimiento máximo.
 
 5.  El destino Cracovia resulta ser la opción óptima para la mayoría de los criterios analizados.
+
+
+# Enunciados de Julian Diemer
+
+# Problema 1: Matrices de valores numéricos
+
+Se tienen dos matrices de $4 \times 4$ con valores enteros aleatorios: una representa beneficios (favorable) y la otra costos (desfavorable).
+
+```{r}
+#| echo: false
+#| layout-ncol: 2
+#| tbl-cap: ["(favorable)", "(defavorable)"]
+
+set.seed(42)
+X <- matrix(sample(-10:10, 16, replace = TRUE), nrow = 4, ncol = 4)
+colnames(X) <- paste0("e", 1:4)
+rownames(X) <- paste0("d", 1:4)
+
+Y <- matrix(sample(-10:10, 16, replace = TRUE), nrow = 4, ncol = 4)
+colnames(Y) <- paste0("e", 1:4)
+rownames(Y) <- paste0("d", 1:4)
+
+knitr::kable(X)
+knitr::kable(Y)
+```
+
+# Problema 2: Decisión de Inversión bajo Incertidumbre
+
+Un fondo de inversión dispone de $10\,\text{M€}$. Por política de gestión del riesgo, la directiva no puede invertir en los tres sectores a la vez ni concentrar todo en uno solo: debe repartir el capital al $50\%$ entre exactamente dos sectores.
+
+Las tres alternativas posibles son:
+
+- $d_1$: $50\%$ Energía Solar y $50\%$ Electromovilidad
+- $d_2$: $50\%$ Energía Solar y $50\%$ Ciberseguridad
+- $d_3$: $50\%$ Electromovilidad y $50\%$ Ciberseguridad
+
+El rendimiento económico final depende del estado de la naturaleza que se presente el próximo año.
+
+- $e_1$: Energía Solar sube un $15\%$, Electromovilidad sube un $10\%$, Ciberseguridad baja un $5\%$
+- $e_2$: Energía Solar baja un $8\%$, Electromovilidad sube un $12\%$, Ciberseguridad sube un $6\%$
+- $e_3$: Energía Solar baja un $10\%$, Electromovilidad baja un $4\%$, Ciberseguridad sube un $18\%$

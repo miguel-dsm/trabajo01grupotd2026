@@ -5,7 +5,263 @@ format:
   typst: default
 ---
 
+```{r}
+#| echo: false
+source("teoriadecision_funciones_incertidumbre.R")
+```
 
+# Soluciónes de los anunciados de Julian Diemer
+# Problema 1: Matrices de valores numéricos
 
+Se consideran dos matrices de decisión de $4 \times 4$ compuestas por valores enteros aleatorios: una representa una situación de beneficios (favorable) y la otra una situación de costes (desfavorable). Se pide analizar ambas matrices aplicando los seis criterios de decisión bajo incertidumbre estudiados para determinar la alternativa óptima en cada caso.
 
+```{r}
+#| echo: false
+#| layout-ncol: 2
+#| tbl-cap: ["(favorable)", "(defavorable)"]
 
+set.seed(42)
+X <- matrix(sample(-10:10, 16, replace = TRUE), nrow = 4, ncol = 4)
+colnames(X) <- paste0("e", 1:4)
+rownames(X) <- paste0("d", 1:4)
+
+Y <- matrix(sample(-10:10, 16, replace = TRUE), nrow = 4, ncol = 4)
+colnames(Y) <- paste0("e", 1:4)
+rownames(Y) <- paste0("d", 1:4)
+
+knitr::kable(X)
+knitr::kable(Y)
+```
+
+Además hay las siguientes cinco preguntas de Verdadero o Falso relacionadas con los resultados:
+
+- 1\) En la matriz favorable el criterio de Wald elige dos alternativas equivalentes.
+
+- 2\) En la matriz favorable el criterio de Hurwicz con $\alpha = 0,6$ elige la alternativa $d_1$.
+
+- 3\) En la matriz favorable la decisión final es $d_2$.
+
+- 4\) En la matriz desfavorable el criterio Laplace y el criterio Savage eligen la alternativa $d_3$.
+
+- 5\) En la matriz desfavorable el criterio de Hurwicz siempre elige alternativa $d_3$ para todos los $\alpha\in(0,1)$.
+
+[**Solución (favorable)**]{.underline}**:** Empezamos con el análisis de la primera matriz (favorable), aplicando de manera sistemática los seis criterios de decisión estudiados en clase para evaluar las diferentes alternativas y determinar la decisión óptima bajo cada uno de ellos:
+
+```{r}
+tb01a = crea.tablaX(c(6,-7,-4,9,
+                      -6,7,-7,7,
+                      -10,6,-6,4,
+                      -1,4,3,-8), numalternativas = 4, numestados = 4)
+tb01a
+```
+
+```{r}
+criterio.Wald(tb01a,T)
+```
+
+Aplicando el criterio de Wald (pesimista), podemos observar que las alternativas $d_1$ y $d_2$ resultan ser equivalentes, ya que ambas ofrecen el mismo valor en el peor de los escenarios. Eso significa que la afirmación 1 es **verdadera**.
+
+```{r}
+criterio.Optimista(tb01a, T)
+```
+
+Aplicando el criterio optimista (Maximax), se selecciona la alternativa $d_1$, ya que es la que ofrece el mayor beneficio posible en el mejor escenario.
+
+```{r}
+criterio.Savage(tb01a,T)
+```
+
+Según el criterio de Savage (minimax del arrepentimiento), la opción recomendada es $d_2$, ya que es la alternativa que minimiza el máximo coste de oportunidad o pérdida en el peor de los escenarios.
+
+```{r}
+criterio.Laplace(tb01a,T)
+```
+
+Según el criterio de Laplace (equiprobable), se selecciona la alternativa $d_1$, ya que presenta el mayor valor medio o esperanza matemática bajo la suposición de que todos los estados de la naturaleza tienen la misma probabilidad de ocurrir.
+
+```{r}
+criterio.PuntoIdeal(tb01a,T)
+```
+
+Según el método del punto ideal, el resultado también señala la opción $d_1$, aunque el margen fue muy ajustado y por poco resulta elegida la opción $d_2$.
+
+Para el criterio de Hurwicz, elegimos un coeficiente de optimismo de $α = 0,6$, que representa un buen término medio entre el mejor y el peor escenario.
+
+```{r}
+criterio.Hurwicz(tb01a, alfa=0.6, T)
+dibuja.criterio.Hurwicz(tb01a, T)
+```
+
+Vemos que el criterio de Hurwicz elige alternativa $d_1$ para $\alpha = 0,6$ así que la afirmación 2 es **verdadera**.
+
+Ahora vamos a ver la evaluación final:
+
+```{r}
+criterio.Todos(tb01a, 0.6, T)
+```
+
+Vemos que la alternativa $d_1$ se propone cinco veces y la alternativa $d_2$, dos veces. Ningún criterio apoya las alternativas $d_3$ y $d_4$. Por lo tanto, la elección definitiva sería la alternativa $d_1$ y la afirmación 3 es **falsa**.
+
+[**Solución (desfavorable)**]{.underline}**:** Continuamos con la solución de la segunda tabla, aplicando los seis mismos criterios:
+
+```{r}
+tb01b = crea.tablaX(c(-2,-6,-8,4,
+                      -7,9,-10,-3,
+                      -6,-9,-1,-7,
+                      2,-3,0,-7), numalternativas = 4, numestados = 4)
+tb01b
+```
+
+```{r}
+criterio.Wald(tb01b,F)
+```
+
+Aplicando el criterio de Wald a la segunda tabla (desfavorable), la alternativa óptima es la opción $d_3$, ya que es la que minimiza el coste máximo en el peor de los escenarios.
+
+```{r}
+criterio.Optimista(tb01b, F)
+```
+
+Con el criterio optimista obtenemos como mejor decisión la alternativa $d_2$.
+
+```{r}
+criterio.Savage(tb01b, F)
+```
+
+Con el criterio de Savage obtenemos como mejor alternativa $d_3$.
+
+```{r}
+criterio.Laplace(tb01b,F)
+```
+
+Con el criterio de Laplace obtenemos la alternativa $d_3$ otra vez. Como el criterio de Savage también eligió la alternativa $d_3$, la afirmación 4 es **verdadera**.
+
+```{r}
+criterio.PuntoIdeal(tb01b,F)
+```
+
+El criterio del punto ideal también surgiere la alternativa $d_3$.
+
+```{r}
+criterio.Hurwicz(tb01b, alfa=0.4, F)
+dibuja.criterio.Hurwicz(tb01b, F)
+```
+
+Podemos ver que para un $\alpha > 0,9$ el criterio elige la alternativa $d_2$ así que la afirmación 5 es **falsa**.
+
+```{r}
+criterio.Todos(tb01b, 0.4, F)
+```
+
+Vemos que todos los criterios, excepto el criterio optimista, se decantan por la alternativa $d_3$, por lo que esta es nuestra decisión definitiva.
+
+A modo de resumen, tenemos lo siguiente:
+
+- 1\) En la matriz favorable el criterio de Wald elige dos alternativas equivalentes. **(V)**
+
+- 2\) En la matriz favorable el criterio de Hurwicz con $\alpha = 0,6$ elige la alternativa $d_1$. **(V)**
+
+- 3\) En la matriz favorable la decisión final es $d_2$. **(F)**
+
+- 4\) En la matriz desfavorable el criterio Laplace y el criterio Savage eligen la alternativa $d_3$. **(V)**
+
+- 5\) En la matriz desfavorable el criterio de Hurwicz siempre elige alternativa $d_3$ para todos los $\alpha\in(0,1)$. **(F)**
+
+# Problema 2: Decisión de inversión bajo incertidumbre
+
+Un fondo de inversión dispone de $10\,\text{M€}$. Por política de gestión del riesgo, la directiva no puede invertir en los tres sectores a la vez ni concentrar todo en uno solo: debe repartir el capital al $50\%$ entre exactamente dos sectores.
+
+Las tres alternativas posibles son:
+
+- $d_1$: $50\%$ Energía Solar y $50\%$ Electromovilidad
+- $d_2$: $50\%$ Energía Solar y $50\%$ Ciberseguridad
+- $d_3$: $50\%$ Electromovilidad y $50\%$ Ciberseguridad
+
+El rendimiento económico final depende del estado de la naturaleza que se presente el próximo año.
+
+- $e_1$: Energía Solar sube un $15\%$, Electromovilidad sube un $10\%$, Ciberseguridad baja un $5\%$
+- $e_2$: Energía Solar baja un $8\%$, Electromovilidad sube un $12\%$, Ciberseguridad sube un $6\%$
+- $e_3$: Energía Solar baja un $10\%$, Electromovilidad baja un $4\%$, Ciberseguridad sube un $18\%$
+
+Las cinco preguntas de Verdadero o Falso son los siguientes:
+
+1.  Si el CEO se muestra optimista y prevé que las cotizaciones suban, invierte en energía solar y electromovilidad.
+
+2.  Si el CEO se muestra pesimista y prevé que las cotizaciones bajen, invierte en energía solar y ciberseguridad.
+
+3.  Según el criterio de Laplace, la decisión final es invertir en energía solar y ciberseguridad.
+
+4.  El criterio de Hurwicz nunca elige la alternativa $d_2$ para ningún valor de $\alpha\in(0,1)$.
+
+5.  La decisión final es invertir en energía solar y ciberseguridad.
+
+**Solución problema 2**: El planteamiento es el siguiente:
+
+- Decisor: El fondo
+
+- Modelo de beneficios (favorable)
+
+- Estados de la naturaleza:
+
+  - $e_1$: Energía Solar sube un $15\%$, Electromovilidad sube un $10\%$, Ciberseguridad baja un $5\%$
+  - $e_2$: Energía Solar baja un $8\%$, Electromovilidad sube un $12\%$, Ciberseguridad sube un $6\%$
+  - $e_3$: Energía Solar baja un $10\%$, Electromovilidad baja un $4\%$, Ciberseguridad sube un $18\%$
+
+- Alternativas:
+
+  - $d_1$: $50\%$ Energía Solar y $50\%$ Electromovilidad
+  - $d_2$: $50\%$ Energía Solar y $50\%$ Ciberseguridad
+  - $d_3$: $50\%$ Electromovilidad y $50\%$ Ciberseguridad
+
+- Matriz de valoración (beneficios):
+
+  - Estado $e_1$:
+
+    ```{r}
+    (m11 = (0.5*0.15 + 0.5*0.10 + 0*(-0.05)))
+    (m21 = (0.5*0.15 + 0*0.10 + 0.5*(-0.05)))
+    (m31 = (0*0.15 + 0.5*0.10 + 0.5*(-0.05)))
+    ```
+
+  - Estado $e_2$:
+
+    ```{r}
+    (m12 = (0.5*(-0.08) + 0.5*0.12 + 0*0.06))
+    (m22 = (0.5*(-0.08) + 0*0.12 + 0.5*0.06))
+    (m32 = (0*(-0.08) + 0.5*0.12 + 0.5*0.06))
+    ```
+
+  - Estado $e_3$:
+
+    ```{r}
+    (m13 = (0.5*(-0.1) + 0.5*(-0.04) + 0*0.18))
+    (m23 = (0.5*(-0.1) + 0* (-0.04) + 0.5*0.18))
+    (m33 = (0*(-0.1) + 0.5*(-0.04) + 0.5*0.18))
+    ```
+
+- Introducción de datos:
+
+  ```{r}
+  tb02 = crea.tablaX(c(m11,m12,m13,
+                      m21,m22,m23,
+                      m31,m32,m33), numalternativas = 3, numestados = 3)
+  tb02
+  ```
+
+- La solución sería:
+
+  ```{r}
+  sol02 = criterio.Todos(tb02, alfa = 0.5, T)
+  sol02
+  dibuja.criterio.Hurwicz(tb02, T)
+  ```
+
+A partir de los resultados obtenidos, podemos proceder a responder a las cinco cuestiones propuestas:
+
+Si el CEO es optimista, elegirá la alternativa derivada del criterio optimista, que es $d_1$. Por el contrario, si adopta un perfil pesimista, aplicará el criterio de Wald para seleccionar la alternativa $d_3$. Eso significa que la afirmación 1 es **verdadera** y la afirmación 2 es **falsa**.
+
+Además, el criterio de Laplace se decanta por la alternativa $d_3$ (electromovilidad y ciberseguridad) significando que la afirmación 3 es **falsa**.
+
+En relación con la cuarta pregunta, al observar el gráfico correspondiente apreciamos que, efectivamente, la alternativa $d_2$ (representada en verde) no resulta seleccionada para ningún valor de $\alpha$ así que esta afirmación es **verdadera**.
+
+Dado que la alternativa​ $d_3$ ha sido elegida un total de cinco veces, frente a una sola elección para las alternativas $d_1$ y $d_2$, se deduce que la decisión final óptima corresponde a la alternativa $d_3$ (electromovilidad y ciberseguridad). Por lo tanto, la afirmación de la pregunta 5 es **falsa**.

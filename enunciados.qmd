@@ -7,7 +7,6 @@ format:
 
 # Enunciados de Miguel Domínguez Sánchez de las Matas
 
-
 ## Problema 1: Tabla de decisión
 
 Dada la matriz de decisión con valores numéricos inventados para 4 alternativas de decisión (d1, d2, d3, d4) y 3 estados de la naturaleza (e1, e2, e3):
@@ -59,12 +58,11 @@ Teniendo en cuenta la cuantía de la beca asignada a cada país y el coste de vi
 
 5.  El destino Cracovia resulta ser la opción óptima para la mayoría de los criterios analizados.
 
-
 # Enunciados de Julian Diemer
 
 # Problema 1: Matrices de valores numéricos
 
-Se tienen dos matrices de $4 \times 4$ con valores enteros aleatorios: una representa beneficios (favorable) y la otra costos (desfavorable).
+Se consideran dos matrices de decisión de $4 \times 4$ compuestas por valores enteros aleatorios: una representa una situación de beneficios (favorable) y la otra una situación de costes (desfavorable). Se pide analizar ambas matrices aplicando los seis criterios de decisión bajo incertidumbre estudiados para determinar la alternativa óptima en cada caso.
 
 ```{r}
 #| echo: false
@@ -84,6 +82,18 @@ knitr::kable(X)
 knitr::kable(Y)
 ```
 
+Las cinco preguntas de Verdadero o Falso son los siguientes:
+
+1)  En la matriz favorable el criterio de Wald elige dos alternativas equivalentes.
+
+2)  En la matriz favorable el criterio de Hurwicz con $\alpha = 0,6$ elige la alternativa $d_1$.
+
+3)  En la matriz favorable la decisión final es $d_2$.
+
+4)  En la matriz desfavorable el criterio Laplace y el criterio Savage eligen la alternativa $d_3$.
+
+5)  En la matriz desfavorable el criterio de Hurwicz siempre elige alternativa $d_3$ para todos los $\alpha\in(0,1)$.
+
 # Problema 2: Decisión de Inversión bajo Incertidumbre
 
 Un fondo de inversión dispone de $10\,\text{M€}$. Por política de gestión del riesgo, la directiva no puede invertir en los tres sectores a la vez ni concentrar todo en uno solo: debe repartir el capital al $50\%$ entre exactamente dos sectores.
@@ -99,3 +109,15 @@ El rendimiento económico final depende del estado de la naturaleza que se prese
 - $e_1$: Energía Solar sube un $15\%$, Electromovilidad sube un $10\%$, Ciberseguridad baja un $5\%$
 - $e_2$: Energía Solar baja un $8\%$, Electromovilidad sube un $12\%$, Ciberseguridad sube un $6\%$
 - $e_3$: Energía Solar baja un $10\%$, Electromovilidad baja un $4\%$, Ciberseguridad sube un $18\%$
+
+Las cinco preguntas de Verdadero o Falso son los siguientes:
+
+1.  Si el director general del fondo se muestra optimista y prevé que las cotizaciones suban, invierte en energía solar y electromovilidad.
+
+2.  Si el director general del fondo se muestra pesimista y prevé que las cotizaciones bajen, invierte en energía solar y ciberseguridad.
+
+3.  Según el criterio de Laplace, la decisión final es invertir en energía solar y ciberseguridad.
+
+4.  El criterio de Hurwicz nunca elige la alternativa $d_2$ para ningún valor de $\alpha\in(0,1)$.
+
+5.  La decisión final es invertir en energía solar y ciberseguridad.

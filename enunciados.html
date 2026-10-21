@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="enunciados_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="enunciados_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="enunciados_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="enunciados_files/libs/bootstrap/bootstrap-917079515d91bccb85b543faf8aa8bb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="enunciados_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -142,11 +142,11 @@ window.Quarto = {
 </table>
 <p><strong>Cuestionario (Indicar Verdadero o Falso para cada afirmación):</strong></p>
 <ol type="1">
-<li><p>En situación favorable (beneficios), el criterio de Wald (pesimista) selecciona la alternativa d<sub>3</sub> con un valor óptimo de 12.</p></li>
-<li><p>Bajo el criterio de Savage en situación desfavorable (costos), la única alternativa óptima es d<sub>2</sub> con un arrepentimiento máximo de 5.</p></li>
-<li><p>Con un coeficiente de optimismo α = 0.6 en beneficios, la decisión óptima según Hurwicz es d<sub>2</sub> obteniendo un valor ponderado de 14.0.</p></li>
-<li><p>El criterio de Laplace otorga el mismo valor esperado tanto a d<sub>1</sub> como a d<sub>2</sub>, siendo este exactamente de 11.67 unidades.</p></li>
-<li><p>En situación desfavorable (costos), el criterio Optimista selecciona d<sub>3</sub> porque presenta el menor costo máximo global de 12.</p></li>
+<li><p>En situación favorable (beneficios), el criterio de Wald (pesimista) selecciona la alternativa <span class="math inline">\(d_3\)</span> con un valor óptimo de 12.</p></li>
+<li><p>Bajo el criterio de Savage en situación desfavorable (costos), la única alternativa óptima es <span class="math inline">\(d_2\)</span> con un arrepentimiento máximo de 5.</p></li>
+<li><p>Con un coeficiente de optimismo α = 0.6 en beneficios, la decisión óptima según Hurwicz es <span class="math inline">\(d_2\)</span> obteniendo un valor ponderado de 14.0.</p></li>
+<li><p>El criterio de Laplace otorga el mismo valor esperado tanto a <span class="math inline">\(d_1\)</span> como a <span class="math inline">\(d_2\)</span>, siendo este exactamente de 11.67 unidades.</p></li>
+<li><p>En situación desfavorable (costos), el criterio Optimista selecciona <span class="math inline">\(d_3\)</span> porque presenta el menor costo máximo global de 12.</p></li>
 </ol>
 </section>
 <section id="problema-2-caso-real.-selección-del-destino-erasmus" class="level2">
@@ -175,7 +175,7 @@ window.Quarto = {
 </section>
 <section id="problema-1-matrices-de-valores-numéricos" class="level1">
 <h1>Problema 1: Matrices de valores numéricos</h1>
-<p>Se tienen dos matrices de <span class="math inline">\(4 \times 4\)</span> con valores enteros aleatorios: una representa beneficios (favorable) y la otra costos (desfavorable).</p>
+<p>Se consideran dos matrices de decisión de <span class="math inline">\(4 \times 4\)</span> compuestas por valores enteros aleatorios: una representa una situación de beneficios (favorable) y la otra una situación de costes (desfavorable). Se pide analizar ambas matrices aplicando los seis criterios de decisión bajo incertidumbre estudiados para determinar la alternativa óptima en cada caso.</p>
 <div class="cell quarto-layout-panel" data-tbl-cap="[&quot;(favorable)&quot;,&quot;(defavorable)&quot;]" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -268,6 +268,14 @@ window.Quarto = {
 </div>
 </div>
 </div>
+<p>Las cinco preguntas de Verdadero o Falso son los siguientes:</p>
+<ol type="1">
+<li><p>En la matriz favorable el criterio de Wald elige dos alternativas equivalentes.</p></li>
+<li><p>En la matriz favorable el criterio de Hurwicz con <span class="math inline">\(\alpha = 0,6\)</span> elige la alternativa <span class="math inline">\(d_1\)</span>.</p></li>
+<li><p>En la matriz favorable la decisión final es <span class="math inline">\(d_2\)</span>.</p></li>
+<li><p>En la matriz desfavorable el criterio Laplace y el criterio Savage eligen la alternativa <span class="math inline">\(d_3\)</span>.</p></li>
+<li><p>En la matriz desfavorable el criterio de Hurwicz siempre elige alternativa <span class="math inline">\(d_3\)</span> para todos los <span class="math inline">\(\alpha\in(0,1)\)</span>.</p></li>
+</ol>
 </section>
 <section id="problema-2-decisión-de-inversión-bajo-incertidumbre" class="level1">
 <h1>Problema 2: Decisión de Inversión bajo Incertidumbre</h1>
@@ -284,6 +292,14 @@ window.Quarto = {
 <li><span class="math inline">\(e_2\)</span>: Energía Solar baja un <span class="math inline">\(8\%\)</span>, Electromovilidad sube un <span class="math inline">\(12\%\)</span>, Ciberseguridad sube un <span class="math inline">\(6\%\)</span></li>
 <li><span class="math inline">\(e_3\)</span>: Energía Solar baja un <span class="math inline">\(10\%\)</span>, Electromovilidad baja un <span class="math inline">\(4\%\)</span>, Ciberseguridad sube un <span class="math inline">\(18\%\)</span></li>
 </ul>
+<p>Las cinco preguntas de Verdadero o Falso son los siguientes:</p>
+<ol type="1">
+<li><p>Si el director general del fondo se muestra optimista y prevé que las cotizaciones suban, invierte en energía solar y electromovilidad.</p></li>
+<li><p>Si el director general del fondo se muestra pesimista y prevé que las cotizaciones bajen, invierte en energía solar y ciberseguridad.</p></li>
+<li><p>Según el criterio de Laplace, la decisión final es invertir en energía solar y ciberseguridad.</p></li>
+<li><p>El criterio de Hurwicz nunca elige la alternativa <span class="math inline">\(d_2\)</span> para ningún valor de <span class="math inline">\(\alpha\in(0,1)\)</span>.</p></li>
+<li><p>La decisión final es invertir en energía solar y ciberseguridad.</p></li>
+</ol>
 </section>
 
 </main>

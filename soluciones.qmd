@@ -454,3 +454,157 @@ Además, el criterio de Laplace se decanta por la alternativa $d_3$ (electromovi
 En relación con la cuarta pregunta, al observar el gráfico correspondiente apreciamos que, efectivamente, la alternativa $d_2$ (representada en verde) no resulta seleccionada para ningún valor de $\alpha$ así que esta afirmación es **verdadera**.
 
 Dado que la alternativa​ $d_3$ ha sido elegida un total de cinco veces, frente a una sola elección para las alternativas $d_1$ y $d_2$, se deduce que la decisión final óptima corresponde a la alternativa $d_3$ (electromovilidad y ciberseguridad). Por lo tanto, la afirmación de la pregunta 5 es **falsa**.
+
+
+# Soluciones de los enunciados de María Auxiliadora Florentino García
+
+## Problema 1: 
+
+Los beneficios estimados para cada alternativa según el estado de la demanda son los siguientes:
+
+| Alternativas       | E1 (Demanda Baja) | E2 (Demanda Media) | E3 (Demanda Alta) |
+|:-----------------|:----------------:|:----------------:|:----------------:|
+| **Alternativa A1** |        10         |         30         |        50         |
+| **Alternativa A2** |        20         |         25         |        40         |
+| **Alternativa A3** |         5         |         35         |        60         |
+
+### 2. Situación Desfavorable (Costes o Pérdidas en miles de euros)
+
+Si en lugar de beneficios consideráramos una matriz de costes (situación desfavorable) para las mismas opciones:
+
+| Alternativas       | E1 (Demanda Baja) | E2 (Demanda Media) | E3 (Demanda Alta) |
+|:-----------------|:----------------:|:----------------:|:----------------:|
+| **Alternativa A1** |        50         |         30         |        10         |
+| **Alternativa A2** |        40         |         25         |        20         |
+| **Alternativa A3** |        60         |         35         |         5         |
+
+```{r}
+# Cargamos script de funciones 
+source("teoriadecision_funciones_incertidumbre.R")
+
+# 1. Matriz para situación favorable -> Beneficios
+tab_fav <- matrix(c(10, 30, 50, 20, 25, 40, 5, 35, 60), nrow = 3, byrow = TRUE)
+rownames(tab_fav) <- c("A1", "A2", "A3")
+colnames(tab_fav) <- c("E1", "E2", "E3")
+tab_fav
+
+# 2. Matriz para situación desfavorable -> Costes
+tab_desf <- matrix(c(50, 30, 10, 40, 25, 20, 60, 35, 5), nrow = 3, byrow = TRUE)
+rownames(tab_desf) <- c("A1", "A2", "A3")
+colnames(tab_desf) <- c("E1", "E2", "E3")
+tab_desf
+```
+
+### Situaciones favorables:
+
+```{r}
+criterio.Wald(tab_fav, favorable = TRUE)
+```
+
+```{r}
+criterio.Optimista(tab_fav, favorable = TRUE)
+```
+
+```{r}
+criterio.Hurwicz(tab_fav, alfa = 0.4, favorable = TRUE)
+```
+
+```{r}
+## Gráfico de Hurwicz para la situación favorable
+dibuja.criterio.Hurwicz(tab_fav, favorable = TRUE)
+```
+
+```{r}
+criterio.Savage(tab_fav, favorable = TRUE)
+```
+
+```{r}
+criterio.Laplace(tab_fav, favorable = TRUE)
+```
+
+### Situación defavorable:
+
+```{r}
+criterio.Wald(tab_desf, favorable = FALSE)
+```
+
+```{r}
+criterio.Optimista(tab_desf, favorable = FALSE)
+```
+
+```{r}
+criterio.Hurwicz(tab_desf, alfa = 0.4, favorable = FALSE)
+
+```
+
+```{r}
+## Gráfico de Hurwicz para la situación desfavorable
+dibuja.criterio.Hurwicz(tab_desf, favorable = FALSE)
+```
+
+```{r}
+criterio.Savage(tab_desf, favorable = FALSE)
+```
+
+```{r}
+criterio.Laplace(tab_desf, favorable = FALSE)
+```
+
+**Solución preguntas V/F:**
+
+1.  **Verdadera**. El criterio Wald calcula los mínimos por fila. El máximo de esos peores valores (10,20,5) es 20, correspondiente a la alternativa A2.
+2.  **Verdadera**. Los máximos por fila son: A1= 50, A2 = 40, A3 = 60. El óptimo optimista es 60, que pertenece a A3.
+3.  **Falsa**. El principio de Lplace asume que la distribución de probabilidad es equiprobable para todos los estados de la naturaleza, asignando a cada uno un peso idéntico de 1/3.
+4.  **Verdadera**. Savage calcula los costes de oportunidad retando los valores de cada columna respectro a su elemento máximo en escenarios favorables.
+5.  **Falsa**. El parámetro α pondera linealmente el mejor y el peor resultado de cada alternativa; al modificarlo, el valor de la función objetivo cambia y puede hacer que varíe la alternativa óptima recomendada.
+
+
+## Problema 2:
+
+Una prestigiosa corporación industrial andaluza especializada en energías renovables se encuentra evaluando la viabilidad estratégica para la instalación de una nueva planta de ensamblaje de componentes fotovoltaicos. Tras un riguroso estudio preliminar, la dirección ha acotado las opciones de localización a tres emplazamientos alternativos exclusivos:
+
+- **Alternativa** $A_1$ (Sevilla): Planta de alta capacidad en el área metropolitana, con economías de escala significativas pero sujeta a mayor competencia y costes logísticos fijos elevados.
+- **Alternativa** $A_2$ (Málaga): Planta de capacidad moderada en un parque tecnológico, caracterizada por costes operativos medios y un entorno de incentivos fiscales favorable.
+- **Alternativa** $A_3$ (Huelva): Planta descentralizada vinculada a un nodo portuario, con un riesgo operativo superior debido a la estacionalidad de la demanda exterior, pero con un coste de suelo inicial muy reducido.
+
+Los beneficios netos anuales esperados (expresados en millones de euros) a lo largo del horizonte temporal de inversión dependen directamente de la evolución de la coyuntura económica y el marco regulatorio energético, el cual se desglosa en tres estados de la naturaleza:
+
+- $E_1$ (Escenario Desfavorable / Estancamiento regulatorio): Restricciones a las primas a las renovables y baja demanda internacional.
+- $E_2$ (Escenario Moderado / Estabilidad y crecimiento sostenido): Mantenimiento de los incentivos actuales y crecimiento vegetativo del mercado europeo.
+- $E_3$ (Escenario Favorable / Expansión agresiva): Fuerte impulso institucional mediante fondos europeos y máxima penetración en el mercado exterior.
+
+La matriz de decisión asociada a este problema estratégico se detalla a continuación:
+
+| Alternativas        | E1 (Estancamiento) | E2 (Estabilidad) | E3 (Expansión) |
+|:--------------------|:------------------:|:----------------:|:--------------:|
+| **Sevilla (**$A_1$) |        12.5        |       28.0       |      45.5      |
+| **Málaga (**$A_2$)  |        15.0        |       25.5       |      40.0      |
+| **Huelva (**$A_3$)  |        8.0         |       32.5       |      56.0      |
+
+
+```{r}
+# Definición de la matriz de decisión del caso real (Beneficios en millones de euros)
+tab_real = crea.tablaX(c(12.5, 28.0, 45.5,
+                         15.0, 25.5, 40.0,
+                         8.0,  32.5, 56.0), 
+                       numalternativas = 3, numestados = 3,
+                       nb_alternativas = c("Sevilla", "Malaga", "Huelva"),
+                       nb_estados = c("E1 (Estancamiento)", "E2 (Estabilidad)", "E3 (Expansion)"))
+
+# Visualización de la matriz
+print("Matriz de Decisión - Caso Real:")
+tab_real
+
+# Resolución conjunta mediante la función global de la asignatura
+sol_real = criterio.Todos(tab_real, alfa = 0.5, favorable = TRUE)
+sol_real
+```
+
+**Respuestas preguntas V/F:**
+
+1.  **Falsa.** El criterio de Wald selecciona la alternativa que maximiza el peor resultado posible de cada fila. Para Huelva el peor resultado es 8.0 para Sevilla es 12.5 y para Málaga es 15.0 . Por lo tanto, el criterio pesimista de Wald selecciona Málaga, no Huelva.
+2.  **Verdadera.** Hurwicz combina mediante el coeficiente de optimismo α el mejor y el peor resultado de cada alternativa.
+3.  **Verdadera.** Laplace asume equiprobabilidad, es decir, asigna la misma probabilidad a todos los estados de la naturaleza.
+4.  **Verdadera.** Savage trabaja construyendo la matriz de pesares o costes de oportunidad restando los valores de cada columna respecto al máximo de esa columna.
+5.  **Falsa.** El parámetro α es precisamente el factor que altera las ponderaciones lineales y determina los intervalos donde la solución óptima cambia de una alternativa a otra.
+

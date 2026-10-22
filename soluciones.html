@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="soluciones_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="soluciones_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="soluciones_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="soluciones_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="soluciones_files/libs/bootstrap/bootstrap-917079515d91bccb85b543faf8aa8bb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -681,10 +681,16 @@ iAlt.Opt (fav.)    Múnich Cracovia Cracovia Cracovia    Cracovia     Cracovia</
 <li><p>Bajo el criterio de Savage, Múnich (<span class="math inline">\(d_2\)</span>) es la alternativa que minimiza el arrepentimiento máximo.</p>
 <p><strong>Solución: FALSO.</strong> La alternativa que minimiza el arrepentimiento es Cracovia</p></li>
 <li><p>El destino Cracovia (<span class="math inline">\(d_3\)</span>) resulta ser la opción óptima para la mayoría de los criterios analizados</p>
-<p><strong>Solución: VERDADERO.</strong> Cracovia es cinco veces óptima, mientras que Múnich lo es solo una vez. # Soluciónes de los enunciados de Julian Diemer ## Problema 1: Matrices de valores numéricos</p></li>
+<p><strong>Solución: VERDADERO.</strong> Cracovia es cinco veces óptima, mientras que Múnich lo es solo una vez.</p></li>
 </ol>
+</section>
+</section>
+<section id="soluciónes-de-los-enunciados-de-julian-diemer" class="level1">
+<h1>Soluciónes de los enunciados de Julian Diemer</h1>
+<section id="problema-1-matrices-de-valores-numéricos" class="level2">
+<h2 class="anchored" data-anchor-id="problema-1-matrices-de-valores-numéricos">Problema 1: Matrices de valores numéricos</h2>
 <p>Se consideran dos matrices de decisión de <span class="math inline">\(4 \times 4\)</span> compuestas por valores enteros aleatorios: una representa una situación de beneficios (favorable) y la otra una situación de costes (desfavorable). Se pide analizar ambas matrices aplicando los seis criterios de decisión bajo incertidumbre estudiados para determinar la alternativa óptima en cada caso.</p>
-<div class="cell quarto-layout-panel" data-layout-ncol="2" data-tbl-cap="[&quot;(favorable)&quot;,&quot;(defavorable)&quot;]">
+<div class="cell quarto-layout-panel" data-tbl-cap="[&quot;(favorable)&quot;,&quot;(defavorable)&quot;]" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <table class="caption-top table table-sm table-striped small">
@@ -776,14 +782,14 @@ iAlt.Opt (fav.)    Múnich Cracovia Cracovia Cracovia    Cracovia     Cracovia</
 </div>
 </div>
 </div>
-<p>Además hay las siguientes cinco preguntas de Verdadero o Falso relacionadas con los resultados:</p>
-<ul>
-<li><p>1) En la matriz favorable el criterio de Wald elige dos alternativas equivalentes.</p></li>
-<li><p>2) En la matriz favorable el criterio de Hurwicz con <span class="math inline">\(\alpha = 0,6\)</span> elige la alternativa <span class="math inline">\(d_1\)</span>.</p></li>
-<li><p>3) En la matriz favorable la decisión final es <span class="math inline">\(d_2\)</span>.</p></li>
-<li><p>4) En la matriz desfavorable el criterio Laplace y el criterio Savage eligen la alternativa <span class="math inline">\(d_3\)</span>.</p></li>
-<li><p>5) En la matriz desfavorable el criterio de Hurwicz siempre elige alternativa <span class="math inline">\(d_3\)</span> para todos los <span class="math inline">\(\alpha\in(0,1)\)</span>.</p></li>
-</ul>
+<p>Las cinco preguntas de Verdadero o Falso son los siguientes:</p>
+<ol type="1">
+<li><p>En la matriz favorable el criterio de Wald elige dos alternativas equivalentes.</p></li>
+<li><p>En la matriz favorable el criterio de Hurwicz con <span class="math inline">\(\alpha = 0,6\)</span> elige la alternativa <span class="math inline">\(d_1\)</span>.</p></li>
+<li><p>En la matriz favorable la decisión final es <span class="math inline">\(d_2\)</span>.</p></li>
+<li><p>En la matriz desfavorable el criterio Laplace y el criterio Savage eligen la alternativa <span class="math inline">\(d_3\)</span>.</p></li>
+<li><p>En la matriz desfavorable el criterio de Hurwicz siempre elige alternativa <span class="math inline">\(d_3\)</span> para todos los <span class="math inline">\(\alpha\in(0,1)\)</span>.</p></li>
+</ol>
 <p><u><strong>Solución (favorable)</strong></u><strong>:</strong> Empezamos con el análisis de la primera matriz (favorable), aplicando de manera sistemática los seis criterios de decisión estudiados en clase para evaluar las diferentes alternativas y determinar la decisión óptima bajo cada uno de ellos:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>tb01a <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(<span class="dv">6</span>,<span class="sc">-</span><span class="dv">7</span>,<span class="sc">-</span><span class="dv">4</span>,<span class="dv">9</span>,</span>
@@ -1232,10 +1238,30 @@ d3
 </figure>
 </div>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tb01b, F, T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="soluciones_files/figure-html/unnamed-chunk-32-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
-<p>Podemos ver que para un <span class="math inline">\(\alpha &gt; 0,9\)</span> el criterio elige la alternativa <span class="math inline">\(d_2\)</span> así que la afirmación 5 es <strong>falsa</strong>.</p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$AltOptimas
+[1] 3 2
+
+$PuntosDeCorte
+[1] 0.909
+
+$IntervalosAlfa
+     Intervalo       Alternativa
+[1,] "( 0 , 0.909 )" "3"        
+[2,] "( 0.909 , 1 )" "2"        </code></pre>
+</div>
+</div>
+<p>Podemos ver que para un <span class="math inline">\(\alpha &gt; 0,909\)</span> el criterio elige la alternativa <span class="math inline">\(d_2\)</span> así que la afirmación 5 es <strong>falsa</strong>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Todos</span>(tb01b, <span class="fl">0.4</span>, F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Todos</span>(tb01b, <span class="fl">0.4</span>, F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                   e1 e2  e3 e4 Wald Optimista Hurwicz Savage Laplace
 d1                 -2 -6  -8  4    4        -8    -0.8     11   -3.00
@@ -1261,9 +1287,10 @@ iAlt.Opt (Desfav.)          d3           d3</code></pre>
 <li><p>5) En la matriz desfavorable el criterio de Hurwicz siempre elige alternativa <span class="math inline">\(d_3\)</span> para todos los <span class="math inline">\(\alpha\in(0,1)\)</span>. <strong>(F)</strong></p></li>
 </ul>
 </section>
-<section id="problema-2-decisión-de-inversión-bajo-incertidumbre" class="level2">
-<h2 class="anchored" data-anchor-id="problema-2-decisión-de-inversión-bajo-incertidumbre">Problema 2: Decisión de inversión bajo incertidumbre</h2>
-<p>Un fondo de inversión dispone de <span class="math inline">\(10\,\text{M€}\)</span>. Por política de gestión del riesgo, la directiva no puede invertir en los tres sectores a la vez ni concentrar todo en uno solo: debe repartir el capital al <span class="math inline">\(50\%\)</span> entre exactamente dos sectores.</p>
+</section>
+<section id="problema-2-decisión-de-inversión-bajo-incertidumbre" class="level1">
+<h1>Problema 2: Decisión de Inversión bajo Incertidumbre</h1>
+<p>Un fondo de inversión dispone de <span class="math inline">\(10\,\text{M€}\)</span>. Por política de gestión del riesgo, la directiva no puede invertir en los tres sectores disponibles a la vez ni concentrar todo en uno solo: debe repartir el capital al <span class="math inline">\(50\%\)</span> entre exactamente dos sectores.</p>
 <p>Las tres alternativas posibles son:</p>
 <ul>
 <li><span class="math inline">\(d_1\)</span>: <span class="math inline">\(50\%\)</span> Energía Solar y <span class="math inline">\(50\%\)</span> Electromovilidad</li>
@@ -1278,13 +1305,13 @@ iAlt.Opt (Desfav.)          d3           d3</code></pre>
 </ul>
 <p>Las cinco preguntas de Verdadero o Falso son los siguientes:</p>
 <ol type="1">
-<li><p>Si el CEO se muestra optimista y prevé que las cotizaciones suban, invierte en energía solar y electromovilidad.</p></li>
-<li><p>Si el CEO se muestra pesimista y prevé que las cotizaciones bajen, invierte en energía solar y ciberseguridad.</p></li>
-<li><p>Según el criterio de Laplace, la decisión final es invertir en energía solar y ciberseguridad.</p></li>
+<li><p>Si el CEO del fondo se muestra optimista y prevé que las cotizaciones suban, invierte en energía solar y electromovilidad.</p></li>
+<li><p>Si el CEO del fondo se muestra pesimista y prevé que las cotizaciones bajen, invierte en energía solar y ciberseguridad.</p></li>
+<li><p>Según el criterio de Laplace, la decisión es invertir en energía solar y ciberseguridad.</p></li>
 <li><p>El criterio de Hurwicz nunca elige la alternativa <span class="math inline">\(d_2\)</span> para ningún valor de <span class="math inline">\(\alpha\in(0,1)\)</span>.</p></li>
 <li><p>La decisión final es invertir en energía solar y ciberseguridad.</p></li>
 </ol>
-<p><strong>Solución problema 2</strong>: El planteamiento es el siguiente:</p>
+<p><u><strong>Solución problema 2</strong></u>: El planteamiento es el siguiente:</p>
 <ul>
 <li><p>Decisor: El fondo</p></li>
 <li><p>Modelo de beneficios (favorable)</p></li>
@@ -1304,45 +1331,45 @@ iAlt.Opt (Desfav.)          d3           d3</code></pre>
 <ul>
 <li><p>Estado <span class="math inline">\(e_1\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m11 =</span> (<span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.15</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.10</span> <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.05</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m11 =</span> (<span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.15</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.10</span> <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.05</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.125</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m21 =</span> (<span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.15</span> <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span><span class="fl">0.10</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.05</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m21 =</span> (<span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.15</span> <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span><span class="fl">0.10</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.05</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.05</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m31 =</span> (<span class="dv">0</span><span class="sc">*</span><span class="fl">0.15</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.10</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.05</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m31 =</span> (<span class="dv">0</span><span class="sc">*</span><span class="fl">0.15</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.10</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.05</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.025</code></pre>
 </div>
 </div></li>
 <li><p>Estado <span class="math inline">\(e_2\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m12 =</span> (<span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.08</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.12</span> <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span><span class="fl">0.06</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m12 =</span> (<span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.08</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.12</span> <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span><span class="fl">0.06</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.02</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m22 =</span> (<span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.08</span>) <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span><span class="fl">0.12</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.06</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m22 =</span> (<span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.08</span>) <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span><span class="fl">0.12</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.06</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] -0.01</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m32 =</span> (<span class="dv">0</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.08</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.12</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.06</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m32 =</span> (<span class="dv">0</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.08</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.12</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.06</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.09</code></pre>
 </div>
 </div></li>
 <li><p>Estado <span class="math inline">\(e_3\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m13 =</span> (<span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.1</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.04</span>) <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span><span class="fl">0.18</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m13 =</span> (<span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.1</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.04</span>) <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span><span class="fl">0.18</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] -0.07</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m23 =</span> (<span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.1</span>) <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span> (<span class="sc">-</span><span class="fl">0.04</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.18</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m23 =</span> (<span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.1</span>) <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span> (<span class="sc">-</span><span class="fl">0.04</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.18</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.04</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m33 =</span> (<span class="dv">0</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.1</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.04</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.18</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>(<span class="at">m33 =</span> (<span class="dv">0</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.1</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>(<span class="sc">-</span><span class="fl">0.04</span>) <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fl">0.18</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.07</code></pre>
 </div>
@@ -1350,10 +1377,10 @@ iAlt.Opt (Desfav.)          d3           d3</code></pre>
 </ul></li>
 <li><p>Introducción de datos:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>tb02 <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(m11,m12,m13,</span>
-<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>                    m21,m22,m23,</span>
-<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a>                    m31,m32,m33), <span class="at">numalternativas =</span> <span class="dv">3</span>, <span class="at">numestados =</span> <span class="dv">3</span>)</span>
-<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a>tb02</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>tb02 <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(m11,m12,m13,</span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>                    m21,m22,m23,</span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>                    m31,m32,m33), <span class="at">numalternativas =</span> <span class="dv">3</span>, <span class="at">numestados =</span> <span class="dv">3</span>)</span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a>tb02</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      e1    e2    e3
 d1 0.125  0.02 -0.07
@@ -1363,8 +1390,8 @@ d3 0.025  0.09  0.07</code></pre>
 </div></li>
 <li><p>La solución sería:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>sol02 <span class="ot">=</span> <span class="fu">criterio.Todos</span>(tb02, <span class="at">alfa =</span> <span class="fl">0.5</span>, T)</span>
-<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>sol02</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>sol02 <span class="ot">=</span> <span class="fu">criterio.Todos</span>(tb02, <span class="at">alfa =</span> <span class="fl">0.5</span>, T)</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>sol02</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                   e1    e2    e3   Wald Optimista Hurwicz Savage Laplace
 d1              0.125  0.02 -0.07 -0.070     0.125  0.0275   0.14 0.02500
@@ -1377,7 +1404,7 @@ d2                   0.1285            1
 d3                   0.1000            5
 iAlt.Opt (fav.)          d3           d3</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tb02, T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tb02, T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1392,6 +1419,544 @@ iAlt.Opt (fav.)          d3           d3</code></pre>
 <p>Además, el criterio de Laplace se decanta por la alternativa <span class="math inline">\(d_3\)</span> (electromovilidad y ciberseguridad) significando que la afirmación 3 es <strong>falsa</strong>.</p>
 <p>En relación con la cuarta pregunta, al observar el gráfico correspondiente apreciamos que, efectivamente, la alternativa <span class="math inline">\(d_2\)</span> (representada en verde) no resulta seleccionada para ningún valor de <span class="math inline">\(\alpha\)</span> así que esta afirmación es <strong>verdadera</strong>.</p>
 <p>Dado que la alternativa​ <span class="math inline">\(d_3\)</span> ha sido elegida un total de cinco veces, frente a una sola elección para las alternativas <span class="math inline">\(d_1\)</span> y <span class="math inline">\(d_2\)</span>, se deduce que la decisión final óptima corresponde a la alternativa <span class="math inline">\(d_3\)</span>&nbsp;(electromovilidad y ciberseguridad). Por lo tanto, la afirmación de la pregunta 5 es <strong>falsa</strong>.</p>
+</section>
+<section id="soluciones-de-los-enunciados-de-maría-auxiliadora-florentino-garcía" class="level1">
+<h1>Soluciones de los enunciados de María Auxiliadora Florentino García</h1>
+<section id="problema-1" class="level2">
+<h2 class="anchored" data-anchor-id="problema-1">Problema 1:</h2>
+<p>Los beneficios estimados para cada alternativa según el estado de la demanda son los siguientes:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Alternativas</th>
+<th style="text-align: center;">E1 (Demanda Baja)</th>
+<th style="text-align: center;">E2 (Demanda Media)</th>
+<th style="text-align: center;">E3 (Demanda Alta)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativa A1</strong></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Alternativa A2</strong></td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">40</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativa A3</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">60</td>
+</tr>
+</tbody>
+</table>
+<section id="situación-desfavorable-costes-o-pérdidas-en-miles-de-euros" class="level3">
+<h3 class="anchored" data-anchor-id="situación-desfavorable-costes-o-pérdidas-en-miles-de-euros">2. Situación Desfavorable (Costes o Pérdidas en miles de euros)</h3>
+<p>Si en lugar de beneficios consideráramos una matriz de costes (situación desfavorable) para las mismas opciones:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Alternativas</th>
+<th style="text-align: center;">E1 (Demanda Baja)</th>
+<th style="text-align: center;">E2 (Demanda Media)</th>
+<th style="text-align: center;">E3 (Demanda Alta)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativa A1</strong></td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Alternativa A2</strong></td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativa A3</strong></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">5</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargamos script de funciones </span></span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"teoriadecision_funciones_incertidumbre.R"</span>)</span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Matriz para situación favorable -&gt; Beneficios</span></span>
+<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a>tab_fav <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">50</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">40</span>, <span class="dv">5</span>, <span class="dv">35</span>, <span class="dv">60</span>), <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(tab_fav) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A1"</span>, <span class="st">"A2"</span>, <span class="st">"A3"</span>)</span>
+<span id="cb88-7"><a href="#cb88-7" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(tab_fav) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"E1"</span>, <span class="st">"E2"</span>, <span class="st">"E3"</span>)</span>
+<span id="cb88-8"><a href="#cb88-8" aria-hidden="true" tabindex="-1"></a>tab_fav</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   E1 E2 E3
+A1 10 30 50
+A2 20 25 40
+A3  5 35 60</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Matriz para situación desfavorable -&gt; Costes</span></span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>tab_desf <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">50</span>, <span class="dv">30</span>, <span class="dv">10</span>, <span class="dv">40</span>, <span class="dv">25</span>, <span class="dv">20</span>, <span class="dv">60</span>, <span class="dv">35</span>, <span class="dv">5</span>), <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(tab_desf) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A1"</span>, <span class="st">"A2"</span>, <span class="st">"A3"</span>)</span>
+<span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(tab_desf) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"E1"</span>, <span class="st">"E2"</span>, <span class="st">"E3"</span>)</span>
+<span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a>tab_desf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   E1 E2 E3
+A1 50 30 10
+A2 40 25 20
+A3 60 35  5</code></pre>
+</div>
+</div>
+</section>
+<section id="situaciones-favorables" class="level3">
+<h3 class="anchored" data-anchor-id="situaciones-favorables">Situaciones favorables:</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Wald</span>(tab_fav, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Wald"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+   E1 E2 E3
+A1 10 30 50
+A2 20 25 40
+A3  5 35 60
+
+$ValorAlternativas
+A1 A2 A3 
+10 20  5 
+
+$ValorOptimo
+[1] 20
+
+$AlternativaOptima
+A2 
+ 2 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Optimista</span>(tab_fav, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Optimista"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+   E1 E2 E3
+A1 10 30 50
+A2 20 25 40
+A3  5 35 60
+
+$ValorAlternativas
+A1 A2 A3 
+50 40 60 
+
+$ValorOptimo
+[1] 60
+
+$AlternativaOptima
+A3 
+ 3 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Hurwicz</span>(tab_fav, <span class="at">alfa =</span> <span class="fl">0.4</span>, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Hurwicz"
+
+$alfa
+[1] 0.4
+
+$metodo
+[1] "favorable"
+
+$tablaX
+   E1 E2 E3
+A1 10 30 50
+A2 20 25 40
+A3  5 35 60
+
+$ValorAlternativas
+A1 A2 A3 
+26 28 27 
+
+$ValorOptimo
+[1] 28
+
+$AlternativaOptima
+A2 
+ 2 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Gráfico de Hurwicz para la situación favorable</span></span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tab_fav, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="soluciones_files/figure-html/unnamed-chunk-43-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Savage</span>(tab_fav, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Savage"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+   E1 E2 E3
+A1 10 30 50
+A2 20 25 40
+A3  5 35 60
+
+$Mejores
+E1 E2 E3 
+20 35 60 
+
+$Pesos
+   E1 E2 E3
+A1 10  5 10
+A2  0 10 20
+A3 15  0  0
+
+$ValorAlternativas
+A1 A2 A3 
+10 20 15 
+
+$ValorOptimo
+[1] 10
+
+$AlternativaOptima
+A1 
+ 1 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tab_fav, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Laplace"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+   E1 E2 E3
+A1 10 30 50
+A2 20 25 40
+A3  5 35 60
+
+$ValorAlternativas
+      A1       A2       A3 
+30.00000 28.33333 33.33333 
+
+$ValorOptimo
+[1] 33.33333
+
+$AlternativaOptima
+A3 
+ 3 </code></pre>
+</div>
+</div>
+</section>
+<section id="situación-defavorable" class="level3">
+<h3 class="anchored" data-anchor-id="situación-defavorable">Situación defavorable:</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Wald</span>(tab_desf, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Wald"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+   E1 E2 E3
+A1 50 30 10
+A2 40 25 20
+A3 60 35  5
+
+$ValorAlternativas
+A1 A2 A3 
+50 40 60 
+
+$ValorOptimo
+[1] 40
+
+$AlternativaOptima
+A2 
+ 2 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb105"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Optimista</span>(tab_desf, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Optimista"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+   E1 E2 E3
+A1 50 30 10
+A2 40 25 20
+A3 60 35  5
+
+$ValorAlternativas
+A1 A2 A3 
+10 20  5 
+
+$ValorOptimo
+[1] 5
+
+$AlternativaOptima
+A3 
+ 3 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Hurwicz</span>(tab_desf, <span class="at">alfa =</span> <span class="fl">0.4</span>, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Hurwicz"
+
+$alfa
+[1] 0.4
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+   E1 E2 E3
+A1 50 30 10
+A2 40 25 20
+A3 60 35  5
+
+$ValorAlternativas
+A1 A2 A3 
+34 32 38 
+
+$ValorOptimo
+[1] 32
+
+$AlternativaOptima
+A2 
+ 2 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb109"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Gráfico de Hurwicz para la situación desfavorable</span></span>
+<span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tab_desf, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="soluciones_files/figure-html/unnamed-chunk-49-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Savage</span>(tab_desf, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Savage"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+   E1 E2 E3
+A1 50 30 10
+A2 40 25 20
+A3 60 35  5
+
+$Mejores
+E1 E2 E3 
+40 25  5 
+
+$Pesos
+   E1 E2 E3
+A1 10  5  5
+A2  0  0 15
+A3 20 10  0
+
+$ValorAlternativas
+A1 A2 A3 
+10 15 20 
+
+$ValorOptimo
+[1] 10
+
+$AlternativaOptima
+A1 
+ 1 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tab_desf, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Laplace"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+   E1 E2 E3
+A1 50 30 10
+A2 40 25 20
+A3 60 35  5
+
+$ValorAlternativas
+      A1       A2       A3 
+30.00000 28.33333 33.33333 
+
+$ValorOptimo
+[1] 28.33333
+
+$AlternativaOptima
+A2 
+ 2 </code></pre>
+</div>
+</div>
+<p><strong>Solución preguntas V/F:</strong></p>
+<ol type="1">
+<li><strong>Verdadera</strong>. El criterio Wald calcula los mínimos por fila. El máximo de esos peores valores (10,20,5) es 20, correspondiente a la alternativa A2.</li>
+<li><strong>Verdadera</strong>. Los máximos por fila son: A1= 50, A2 = 40, A3 = 60. El óptimo optimista es 60, que pertenece a A3.</li>
+<li><strong>Falsa</strong>. El principio de Lplace asume que la distribución de probabilidad es equiprobable para todos los estados de la naturaleza, asignando a cada uno un peso idéntico de 1/3.</li>
+<li><strong>Verdadera</strong>. Savage calcula los costes de oportunidad retando los valores de cada columna respectro a su elemento máximo en escenarios favorables.</li>
+<li><strong>Falsa</strong>. El parámetro α pondera linealmente el mejor y el peor resultado de cada alternativa; al modificarlo, el valor de la función objetivo cambia y puede hacer que varíe la alternativa óptima recomendada.</li>
+</ol>
+</section>
+</section>
+<section id="problema-2" class="level2">
+<h2 class="anchored" data-anchor-id="problema-2">Problema 2:</h2>
+<p>Una prestigiosa corporación industrial andaluza especializada en energías renovables se encuentra evaluando la viabilidad estratégica para la instalación de una nueva planta de ensamblaje de componentes fotovoltaicos. Tras un riguroso estudio preliminar, la dirección ha acotado las opciones de localización a tres emplazamientos alternativos exclusivos:</p>
+<ul>
+<li><strong>Alternativa</strong> <span class="math inline">\(A_1\)</span> (Sevilla): Planta de alta capacidad en el área metropolitana, con economías de escala significativas pero sujeta a mayor competencia y costes logísticos fijos elevados.</li>
+<li><strong>Alternativa</strong> <span class="math inline">\(A_2\)</span> (Málaga): Planta de capacidad moderada en un parque tecnológico, caracterizada por costes operativos medios y un entorno de incentivos fiscales favorable.</li>
+<li><strong>Alternativa</strong> <span class="math inline">\(A_3\)</span> (Huelva): Planta descentralizada vinculada a un nodo portuario, con un riesgo operativo superior debido a la estacionalidad de la demanda exterior, pero con un coste de suelo inicial muy reducido.</li>
+</ul>
+<p>Los beneficios netos anuales esperados (expresados en millones de euros) a lo largo del horizonte temporal de inversión dependen directamente de la evolución de la coyuntura económica y el marco regulatorio energético, el cual se desglosa en tres estados de la naturaleza:</p>
+<ul>
+<li><span class="math inline">\(E_1\)</span> (Escenario Desfavorable / Estancamiento regulatorio): Restricciones a las primas a las renovables y baja demanda internacional.</li>
+<li><span class="math inline">\(E_2\)</span> (Escenario Moderado / Estabilidad y crecimiento sostenido): Mantenimiento de los incentivos actuales y crecimiento vegetativo del mercado europeo.</li>
+<li><span class="math inline">\(E_3\)</span> (Escenario Favorable / Expansión agresiva): Fuerte impulso institucional mediante fondos europeos y máxima penetración en el mercado exterior.</li>
+</ul>
+<p>La matriz de decisión asociada a este problema estratégico se detalla a continuación:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 26%">
+<col style="width: 24%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Alternativas</th>
+<th style="text-align: center;">E1 (Estancamiento)</th>
+<th style="text-align: center;">E2 (Estabilidad)</th>
+<th style="text-align: center;">E3 (Expansión)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sevilla (</strong><span class="math inline">\(A_1\)</span>)</td>
+<td style="text-align: center;">12.5</td>
+<td style="text-align: center;">28.0</td>
+<td style="text-align: center;">45.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Málaga (</strong><span class="math inline">\(A_2\)</span>)</td>
+<td style="text-align: center;">15.0</td>
+<td style="text-align: center;">25.5</td>
+<td style="text-align: center;">40.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Huelva (</strong><span class="math inline">\(A_3\)</span>)</td>
+<td style="text-align: center;">8.0</td>
+<td style="text-align: center;">32.5</td>
+<td style="text-align: center;">56.0</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definición de la matriz de decisión del caso real (Beneficios en millones de euros)</span></span>
+<span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a>tab_real <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(<span class="fl">12.5</span>, <span class="fl">28.0</span>, <span class="fl">45.5</span>,</span>
+<span id="cb114-3"><a href="#cb114-3" aria-hidden="true" tabindex="-1"></a>                         <span class="fl">15.0</span>, <span class="fl">25.5</span>, <span class="fl">40.0</span>,</span>
+<span id="cb114-4"><a href="#cb114-4" aria-hidden="true" tabindex="-1"></a>                         <span class="fl">8.0</span>,  <span class="fl">32.5</span>, <span class="fl">56.0</span>), </span>
+<span id="cb114-5"><a href="#cb114-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">numalternativas =</span> <span class="dv">3</span>, <span class="at">numestados =</span> <span class="dv">3</span>,</span>
+<span id="cb114-6"><a href="#cb114-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">nb_alternativas =</span> <span class="fu">c</span>(<span class="st">"Sevilla"</span>, <span class="st">"Malaga"</span>, <span class="st">"Huelva"</span>),</span>
+<span id="cb114-7"><a href="#cb114-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">nb_estados =</span> <span class="fu">c</span>(<span class="st">"E1 (Estancamiento)"</span>, <span class="st">"E2 (Estabilidad)"</span>, <span class="st">"E3 (Expansion)"</span>))</span>
+<span id="cb114-8"><a href="#cb114-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb114-9"><a href="#cb114-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualización de la matriz</span></span>
+<span id="cb114-10"><a href="#cb114-10" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Matriz de Decisión - Caso Real:"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Matriz de Decisión - Caso Real:"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a>tab_real</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        E1 (Estancamiento) E2 (Estabilidad) E3 (Expansion)
+Sevilla               12.5             28.0           45.5
+Malaga                15.0             25.5           40.0
+Huelva                 8.0             32.5           56.0</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolución conjunta mediante la función global de la asignatura</span></span>
+<span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a>sol_real <span class="ot">=</span> <span class="fu">criterio.Todos</span>(tab_real, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a>sol_real</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                E1 (Estancamiento) E2 (Estabilidad) E3 (Expansion)   Wald
+Sevilla                       12.5             28.0           45.5   12.5
+Malaga                        15.0             25.5           40.0   15.0
+Huelva                         8.0             32.5           56.0    8.0
+iAlt.Opt (fav.)                 --               --             -- Malaga
+                Optimista Hurwicz Savage Laplace Punto Ideal Veces Optima
+Sevilla              45.5    29.0   10.5   28.67       11.69            0
+Malaga               40.0    27.5   16.0   26.83       17.46            1
+Huelva               56.0    32.0    7.0   32.17        7.00            5
+iAlt.Opt (fav.)    Huelva  Huelva Huelva  Huelva      Huelva       Huelva</code></pre>
+</div>
+</div>
+<p><strong>Respuestas preguntas V/F:</strong></p>
+<ol type="1">
+<li><strong>Falsa.</strong> El criterio de Wald selecciona la alternativa que maximiza el peor resultado posible de cada fila. Para Huelva el peor resultado es 8.0 para Sevilla es 12.5 y para Málaga es 15.0 . Por lo tanto, el criterio pesimista de Wald selecciona Málaga, no Huelva.</li>
+<li><strong>Verdadera.</strong> Hurwicz combina mediante el coeficiente de optimismo α el mejor y el peor resultado de cada alternativa.</li>
+<li><strong>Verdadera.</strong> Laplace asume equiprobabilidad, es decir, asigna la misma probabilidad a todos los estados de la naturaleza.</li>
+<li><strong>Verdadera.</strong> Savage trabaja construyendo la matriz de pesares o costes de oportunidad restando los valores de cada columna respecto al máximo de esa columna.</li>
+<li><strong>Falsa.</strong> El parámetro α es precisamente el factor que altera las ponderaciones lineales y determina los intervalos donde la solución óptima cambia de una alternativa a otra.</li>
+</ol>
 </section>
 </section>
 

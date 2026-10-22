@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="enunciados_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="enunciados_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="enunciados_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="enunciados_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="enunciados_files/libs/bootstrap/bootstrap-917079515d91bccb85b543faf8aa8bb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -176,7 +176,7 @@ window.Quarto = {
 <section id="problema-1-matrices-de-valores-numéricos" class="level1">
 <h1>Problema 1: Matrices de valores numéricos</h1>
 <p>Se consideran dos matrices de decisión de <span class="math inline">\(4 \times 4\)</span> compuestas por valores enteros aleatorios: una representa una situación de beneficios (favorable) y la otra una situación de costes (desfavorable). Se pide analizar ambas matrices aplicando los seis criterios de decisión bajo incertidumbre estudiados para determinar la alternativa óptima en cada caso.</p>
-<div class="cell quarto-layout-panel" data-tbl-cap="[&quot;(favorable)&quot;,&quot;(defavorable)&quot;]" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-tbl-cap="[&quot;(favorable)&quot;,&quot;(defavorable)&quot;]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <table class="caption-top table table-sm table-striped small">
@@ -279,7 +279,7 @@ window.Quarto = {
 </section>
 <section id="problema-2-decisión-de-inversión-bajo-incertidumbre" class="level1">
 <h1>Problema 2: Decisión de Inversión bajo Incertidumbre</h1>
-<p>Un fondo de inversión dispone de <span class="math inline">\(10\,\text{M€}\)</span>. Por política de gestión del riesgo, la directiva no puede invertir en los tres sectores a la vez ni concentrar todo en uno solo: debe repartir el capital al <span class="math inline">\(50\%\)</span> entre exactamente dos sectores.</p>
+<p>Un fondo de inversión dispone de <span class="math inline">\(10\,\text{M€}\)</span>. Por política de gestión del riesgo, la directiva no puede invertir en los tres sectores disponibles a la vez ni concentrar todo en uno solo: debe repartir el capital al <span class="math inline">\(50\%\)</span> entre exactamente dos sectores.</p>
 <p>Las tres alternativas posibles son:</p>
 <ul>
 <li><span class="math inline">\(d_1\)</span>: <span class="math inline">\(50\%\)</span> Energía Solar y <span class="math inline">\(50\%\)</span> Electromovilidad</li>
@@ -294,12 +294,169 @@ window.Quarto = {
 </ul>
 <p>Las cinco preguntas de Verdadero o Falso son los siguientes:</p>
 <ol type="1">
-<li><p>Si el director general del fondo se muestra optimista y prevé que las cotizaciones suban, invierte en energía solar y electromovilidad.</p></li>
-<li><p>Si el director general del fondo se muestra pesimista y prevé que las cotizaciones bajen, invierte en energía solar y ciberseguridad.</p></li>
-<li><p>Según el criterio de Laplace, la decisión final es invertir en energía solar y ciberseguridad.</p></li>
+<li><p>Si el CEO del fondo se muestra optimista y prevé que las cotizaciones suban, invierte en energía solar y electromovilidad.</p></li>
+<li><p>Si el CEO del fondo se muestra pesimista y prevé que las cotizaciones bajen, invierte en energía solar y ciberseguridad.</p></li>
+<li><p>Según el criterio de Laplace, la decisión es invertir en energía solar y ciberseguridad.</p></li>
 <li><p>El criterio de Hurwicz nunca elige la alternativa <span class="math inline">\(d_2\)</span> para ningún valor de <span class="math inline">\(\alpha\in(0,1)\)</span>.</p></li>
 <li><p>La decisión final es invertir en energía solar y ciberseguridad.</p></li>
 </ol>
+</section>
+<section id="enunciados-de-maría-auxiliadora-florentino-garcía" class="level1">
+<h1>Enunciados de María Auxiliadora Florentino García</h1>
+<section id="problema-1" class="level2">
+<h2 class="anchored" data-anchor-id="problema-1">Problema 1</h2>
+<p>Una empresa de comercio electrónico está valorando tres opciones de expansión logística (alternativas <span class="math inline">\(A_1, A_2, A_3\)</span>) en función de la evolución de la demanda del mercado, la cual puede presentarse en tres estados de la naturaleza distintos (<span class="math inline">\(E_1\)</span>: demanda baja, <span class="math inline">\(E_2\)</span>: demanda media, <span class="math inline">\(E_3\)</span>: demanda alta).</p>
+<section id="situación-favorable-beneficios-en-miles-de-euros" class="level3">
+<h3 class="anchored" data-anchor-id="situación-favorable-beneficios-en-miles-de-euros">1. Situación Favorable (Beneficios en miles de euros)</h3>
+<p>Los beneficios estimados para cada alternativa según el estado de la demanda son los siguientes:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Alternativas</th>
+<th style="text-align: center;">E1 (Demanda Baja)</th>
+<th style="text-align: center;">E2 (Demanda Media)</th>
+<th style="text-align: center;">E3 (Demanda Alta)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativa A1</strong></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Alternativa A2</strong></td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">40</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativa A3</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">60</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="situación-desfavorable-costes-o-pérdidas-en-miles-de-euros" class="level3">
+<h3 class="anchored" data-anchor-id="situación-desfavorable-costes-o-pérdidas-en-miles-de-euros">2. Situación Desfavorable (Costes o Pérdidas en miles de euros)</h3>
+<p>Si en lugar de beneficios consideráramos una matriz de costes (situación desfavorable) para las mismas opciones:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Alternativas</th>
+<th style="text-align: center;">E1 (Demanda Baja)</th>
+<th style="text-align: center;">E2 (Demanda Media)</th>
+<th style="text-align: center;">E3 (Demanda Alta)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativa A1</strong></td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Alternativa A2</strong></td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativa A3</strong></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">5</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Preguntas V/F</strong></p>
+<ol type="1">
+<li>En la situación favorable, el criterio de Wald (pesimista) selecciona la alternativa A2 porque su peor resultado es superior al de las demás opciones.</li>
+<li>En la situación favorable,&nbsp;el criterio optimista (Maximax) selecciona la alternativa A3 al presentar el mayor rendimiento máximo posible.</li>
+<li>El criterio de Laplace asume que los estados de la naturaleza (E1,E2,E3) tienen probabilidades de ocurrencia diferentes y ponderadas según criterios de mercado.</li>
+<li>El criterio de Savage se apoya en el cálculo previo de una matriz de pesares restando cada elemento del valor máximo de su columna en el caso favorable.</li>
+<li>El coeficiente de optimismo α en el criterio de Hurwicz no influye en absoluto sobre la alternativa seleccionada, independientemente del valor que tome entre 0 y 1.</li>
+</ol>
+</section>
+</section>
+<section id="problema-2" class="level2">
+<h2 class="anchored" data-anchor-id="problema-2">Problema 2</h2>
+<p>Una prestigiosa corporación industrial andaluza especializada en energías renovables se encuentra evaluando la viabilidad estratégica para la instalación de una nueva planta de ensamblaje de componentes fotovoltaicos. Tras un riguroso estudio preliminar, la dirección ha acotado las opciones de localización a tres emplazamientos alternativos exclusivos:</p>
+<ul>
+<li><strong>Alternativa</strong> <span class="math inline">\(A_1\)</span> (Sevilla): Planta de alta capacidad en el área metropolitana, con economías de escala significativas pero sujeta a mayor competencia y costes logísticos fijos elevados.</li>
+<li><strong>Alternativa</strong> <span class="math inline">\(A_2\)</span> (Málaga): Planta de capacidad moderada en un parque tecnológico, caracterizada por costes operativos medios y un entorno de incentivos fiscales favorable.</li>
+<li><strong>Alternativa</strong> <span class="math inline">\(A_3\)</span> (Huelva): Planta descentralizada vinculada a un nodo portuario, con un riesgo operativo superior debido a la estacionalidad de la demanda exterior, pero con un coste de suelo inicial muy reducido.</li>
+</ul>
+<p>Los beneficios netos anuales esperados (expresados en millones de euros) a lo largo del horizonte temporal de inversión dependen directamente de la evolución de la coyuntura económica y el marco regulatorio energético, el cual se desglosa en tres estados de la naturaleza:</p>
+<ul>
+<li><span class="math inline">\(E_1\)</span> (Escenario Desfavorable / Estancamiento regulatorio): Restricciones a las primas a las renovables y baja demanda internacional.</li>
+<li><span class="math inline">\(E_2\)</span> (Escenario Moderado / Estabilidad y crecimiento sostenido): Mantenimiento de los incentivos actuales y crecimiento vegetativo del mercado europeo.</li>
+<li><span class="math inline">\(E_3\)</span> (Escenario Favorable / Expansión agresiva): Fuerte impulso institucional mediante fondos europeos y máxima penetración en el mercado exterior.</li>
+</ul>
+<p>La matriz de decisión asociada a este problema estratégico se detalla a continuación:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 26%">
+<col style="width: 24%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Alternativas</th>
+<th style="text-align: center;">E1 (Estancamiento)</th>
+<th style="text-align: center;">E2 (Estabilidad)</th>
+<th style="text-align: center;">E3 (Expansión)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sevilla (</strong><span class="math inline">\(A_1\)</span>)</td>
+<td style="text-align: center;">12.5</td>
+<td style="text-align: center;">28.0</td>
+<td style="text-align: center;">45.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Málaga (</strong><span class="math inline">\(A_2\)</span>)</td>
+<td style="text-align: center;">15.0</td>
+<td style="text-align: center;">25.5</td>
+<td style="text-align: center;">40.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Huelva (</strong><span class="math inline">\(A_3\)</span>)</td>
+<td style="text-align: center;">8.0</td>
+<td style="text-align: center;">32.5</td>
+<td style="text-align: center;">56.0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Preguntas V/F:</strong></p>
+<ol type="1">
+<li>En el análisis de este caso real, si la dirección adoptase una actitud estrictamente pesimista aplicando el criterio de Wald,la alternativa seleccionada sería Huelva (A3) debido a su elevado rendimiento en el estado de expansión.</li>
+<li>El criterio de Hurwicz permite modelar las preferencias del decisor introduciendo un parámetro de optimismo α que pondera linealmente el mejor y el peor resultado de cada alternativa.</li>
+<li>El principio de Laplace asume una distribución de probabilidad uniforme sobre el conjunto de estados de la naturaleza, otorgando un peso idéntico del 33.33% a cada escenario macroeconómico.</li>
+<li>El criterio de Savage (coste de oportunidad minimax) evalúa las alternativas midiendo el perjuicio o pérdida relativa que se experimentaría por no haber elegido la opción óptima a posteriori en cada estado.</li>
+<li>Modificar el coeficiente de optimismo α en el criterio de Hurwicz carece de influencia sobre la alternativa óptima recomendada cuando los valores extremos de las filas están muy distanciados.</li>
+</ol>
+</section>
 </section>
 
 </main>

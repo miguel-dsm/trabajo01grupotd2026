@@ -121,3 +121,72 @@ Las cinco preguntas de Verdadero o Falso son los siguientes:
 4.  El criterio de Hurwicz nunca elige la alternativa $d_2$ para ningún valor de $\alpha\in(0,1)$.
 
 5.  La decisión final es invertir en energía solar y ciberseguridad.
+
+
+# Enunciados de María Auxiliadora Florentino García
+
+## Problema 1
+
+Una empresa de comercio electrónico está valorando tres opciones de expansión logística (alternativas $A_1, A_2, A_3$) en función de la evolución de la demanda del mercado, la cual puede presentarse en tres estados de la naturaleza distintos ($E_1$: demanda baja, $E_2$: demanda media, $E_3$: demanda alta).
+
+### 1. Situación Favorable (Beneficios en miles de euros)
+
+Los beneficios estimados para cada alternativa según el estado de la demanda son los siguientes:
+
+| Alternativas       | E1 (Demanda Baja) | E2 (Demanda Media) | E3 (Demanda Alta) |
+|:-----------------|:----------------:|:----------------:|:----------------:|
+| **Alternativa A1** |        10         |         30         |        50         |
+| **Alternativa A2** |        20         |         25         |        40         |
+| **Alternativa A3** |         5         |         35         |        60         |
+
+### 2. Situación Desfavorable (Costes o Pérdidas en miles de euros)
+
+Si en lugar de beneficios consideráramos una matriz de costes (situación desfavorable) para las mismas opciones:
+
+| Alternativas       | E1 (Demanda Baja) | E2 (Demanda Media) | E3 (Demanda Alta) |
+|:-----------------|:----------------:|:----------------:|:----------------:|
+| **Alternativa A1** |        50         |         30         |        10         |
+| **Alternativa A2** |        40         |         25         |        20         |
+| **Alternativa A3** |        60         |         35         |         5         |
+
+------------------------------------------------------------------------
+
+**Preguntas V/F**
+
+1.  En la situación favorable, el criterio de Wald (pesimista) selecciona la alternativa A2 porque su peor resultado es superior al de las demás opciones.
+2.  En la situación favorable, el criterio optimista (Maximax) selecciona la alternativa A3 al presentar el mayor rendimiento máximo posible.
+3.  El criterio de Laplace asume que los estados de la naturaleza (E1,E2,E3) tienen probabilidades de ocurrencia diferentes y ponderadas según criterios de mercado.
+4.  El criterio de Savage se apoya en el cálculo previo de una matriz de pesares restando cada elemento del valor máximo de su columna en el caso favorable.
+5.  El coeficiente de optimismo α en el criterio de Hurwicz no influye en absoluto sobre la alternativa seleccionada, independientemente del valor que tome entre 0 y 1.
+
+## Problema 2
+
+Una prestigiosa corporación industrial andaluza especializada en energías renovables se encuentra evaluando la viabilidad estratégica para la instalación de una nueva planta de ensamblaje de componentes fotovoltaicos. Tras un riguroso estudio preliminar, la dirección ha acotado las opciones de localización a tres emplazamientos alternativos exclusivos:
+
+- **Alternativa** $A_1$ (Sevilla): Planta de alta capacidad en el área metropolitana, con economías de escala significativas pero sujeta a mayor competencia y costes logísticos fijos elevados.
+- **Alternativa** $A_2$ (Málaga): Planta de capacidad moderada en un parque tecnológico, caracterizada por costes operativos medios y un entorno de incentivos fiscales favorable.
+- **Alternativa** $A_3$ (Huelva): Planta descentralizada vinculada a un nodo portuario, con un riesgo operativo superior debido a la estacionalidad de la demanda exterior, pero con un coste de suelo inicial muy reducido.
+
+Los beneficios netos anuales esperados (expresados en millones de euros) a lo largo del horizonte temporal de inversión dependen directamente de la evolución de la coyuntura económica y el marco regulatorio energético, el cual se desglosa en tres estados de la naturaleza:
+
+- $E_1$ (Escenario Desfavorable / Estancamiento regulatorio): Restricciones a las primas a las renovables y baja demanda internacional.
+- $E_2$ (Escenario Moderado / Estabilidad y crecimiento sostenido): Mantenimiento de los incentivos actuales y crecimiento vegetativo del mercado europeo.
+- $E_3$ (Escenario Favorable / Expansión agresiva): Fuerte impulso institucional mediante fondos europeos y máxima penetración en el mercado exterior.
+
+La matriz de decisión asociada a este problema estratégico se detalla a continuación:
+
+| Alternativas        | E1 (Estancamiento) | E2 (Estabilidad) | E3 (Expansión) |
+|:--------------------|:------------------:|:----------------:|:--------------:|
+| **Sevilla (**$A_1$) |        12.5        |       28.0       |      45.5      |
+| **Málaga (**$A_2$)  |        15.0        |       25.5       |      40.0      |
+| **Huelva (**$A_3$)  |        8.0         |       32.5       |      56.0      |
+
+------------------------------------------------------------------------
+
+**Preguntas V/F:**
+
+1.  En el análisis de este caso real, si la dirección adoptase una actitud estrictamente pesimista aplicando el criterio de Wald,la alternativa seleccionada sería Huelva (A3) debido a su elevado rendimiento en el estado de expansión.
+2.  El criterio de Hurwicz permite modelar las preferencias del decisor introduciendo un parámetro de optimismo α que pondera linealmente el mejor y el peor resultado de cada alternativa.
+3.  El principio de Laplace asume una distribución de probabilidad uniforme sobre el conjunto de estados de la naturaleza, otorgando un peso idéntico del 33.33% a cada escenario macroeconómico.
+4.  El criterio de Savage (coste de oportunidad minimax) evalúa las alternativas midiendo el perjuicio o pérdida relativa que se experimentaría por no haber elegido la opción óptima a posteriori en cada estado.
+5.  Modificar el coeficiente de optimismo α en el criterio de Hurwicz carece de influencia sobre la alternativa óptima recomendada cuando los valores extremos de las filas están muy distanciados.
